@@ -1,0 +1,26 @@
+
+.contact-content{
+    /* height: 395px; */
+    /* background-color: rgb(202, 202, 240); */
+    /* display: flex; */
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+    font-family: var(--font1);
+}
+.contact-content::after{
+    content: "";
+    background-image: url(/smartphone-blog-article-creative-paper-free-vector.jpg);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    opacity: 0.29;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form{
+    height: 80vh;
+}

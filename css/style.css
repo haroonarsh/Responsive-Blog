@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navigation {
+    margin: 20px;
+    font-family: var(--font1);
+    height: 99px;
+    /* background-color:    red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left {
+    font-size: 35px;
+    display: flex;
+    font-weight: bold;
+}
+
+.nav-left span {
+    width: 140px;
+    margin-top: 33px;
+}
+
+.nav-left span img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+    font-size: 20px;
+    font-weight: normal;
+    list-style: none;
+}
+
+.nav-left ul li {
+    margin: 0 9px;
+    align-items: center;
+    display: grid;
+    align-items: center;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    font-family: var(--font2);
+    color: black;
+    transition: 0.5s;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+/* ************************Content*********************** */
+
+.content {
+    height: 395px;
+    /* background-color: rgb(202, 202, 240); */
+    display: flex;
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+    z-index: 1;
+}
+
+.content::after {
+    content: "";
+    background-image: url(/images/smartphone-blog-article-creative-paper-free-vector.jpg);
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.13;
+    z-index: -1;
+}
+
+.content-left {
+    font-family: var(--font1);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.content-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right img {
+    height: 322px;
+    border: 2px solid black;
+    border-radius: 341px;
+}
+
+/* *****************************Articles**************************** */
+
+.home-articles {
+    /* height: 455px; */
+    background-color: rgba(255, 227, 227, 0.3);
+    padding: 13px;
+    padding-top: 29px;
+    font-family: var(--font2);
+    position: relative;
+}
+
+.year-box {
+    position: absolute;
+    width: 213px;
+    height: 228px;
+    /* background-color: red; */
+    right: -18px;
+    top: 80px;
+}
+
+.year-box div {
+    font-size: 18px;
+}
+
+.home-article {
+    display: flex;
+    margin: 25px;
+}
+
+.home-article img {
+    width: 300px;
+    border: 2px solid black;
+}
+
+.home-article-content {
+    font-family: var(--font1);
+    align-self: center;
+    padding: 25px;
+}
+
+.home-article-content a {
+    text-decoration: none;
+    color: rgb(3, 3, 218)
+}
+
+/* **********************Footer**************************** */
+
+.footer {
+    height: 40px;
+    background-color: rgb(176, 176, 255);
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer a {
+    color: black;
+}
